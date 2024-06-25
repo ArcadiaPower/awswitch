@@ -1,0 +1,15 @@
+name: GitLeaks
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  scan:
+    name: gitleaks
+    uses: ArcadiaPower/gitleaks-workflow/.github/workflows/gitleaks.yaml@5ae02b51d3614e5227a7d618e9e9d457cadae74a
+    secrets: inherit
+
