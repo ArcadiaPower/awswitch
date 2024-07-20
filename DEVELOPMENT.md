@@ -5,8 +5,16 @@ This document is intended to help developers get started with the project. It is
 ## Prerequisites
 
 - [Go](https://golang.org/doc/install) 
-  - The project is currently built with Go 1.19.X, but should work with newer (and to some extent older) versions of Go without trouble.
+  - The project is currently built with Go 1.22.X, but should work with newer (and to some extent older) versions of Go without trouble.
 - [gimme-aws-creds](https://github.com/Nike-Inc/gimme-aws-creds)
+
+### direnv + asdf
+
+The `.envrc` and `.tool-versions` files are used to setup direnv and asdf. These are optional tools for managing environment variables and cli tools. If you want to learn more/use these tools you can read about them at the following links:
+
+- [direnv](https://direnv.net/)
+- [asdf](https://asdf-vm.com/)
+- [asdf-direnv](https://github.com/asdf-community/asdf-direnv)
 
 Currently the project is only tested on macOS and Linux. It may work on Windows by virtue of the Go std library doing the heavy lifting for cross-platform support, but it is not officially supported and may require some additional work. If you're primarily a Windows developer and would like to help make this project work on Windows, please reach out to us.
 
